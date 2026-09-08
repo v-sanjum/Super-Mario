@@ -1,17 +1,13 @@
 {
-  "name": "pixel-runner",
+  "name": "jump-quest",
   "version": "1.0.0",
-  "description": "An original side-scrolling platformer game served via Node/Express, ready for Cloudways deployment.",
+  "description": "Original side-scrolling platformer game (Node.js static server + HTML5 canvas)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=16.0.0"
   },
-  "dependencies": {
-    "express": "^4.19.2",
-    "compression": "^1.7.4",
-    "helmet": "^7.1.0"
-  }
+  "license": "MIT"
 }
