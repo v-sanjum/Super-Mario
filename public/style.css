@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #1a1a2e;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+#game-wrapper {
+  position: relative;
+  width: 960px;
+  max-width: 96vw;
+}
+
+#hud {
+  display: flex;
+  gap: 24px;
+  background: #0f0f1a;
+  padding: 10px 16px;
+  border-radius: 10px 10px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hud-item span {
+  color: #ffd447;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  background: linear-gradient(#5c94fc, #a3d9ff);
+  border-radius: 0 0 10px 10px;
+  image-rendering: pixelated;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 20, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#overlay.hidden {
+  display: none;
+}
+
+#overlay h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+  color: #ffd447;
+  text-shadow: 3px 3px 0 #c0392b;
+}
+
+#overlay p {
+  max-width: 500px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#start-btn {
+  background: #e94560;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+#start-btn:hover {
+  background: #ff5b7a;
+  transform: scale(1.05);
+}
